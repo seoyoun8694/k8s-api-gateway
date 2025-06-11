@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.welab'
-version = '0.0.1'
+version = '0.0.4'
 
 java {
 	toolchain {
@@ -47,15 +47,17 @@ tasks.named('test') {
 }
 
 jar {
-	enabled = false
+	enabled = false // plain.jar 생성 완전히 비활성화
 }
 
 tasks.register('getAppName') {
 	doLast {
-		println "${rootProject.name}" }
+		println "${rootProject.name}"
+	}
 }
 
 tasks.register('getAppVersion') {
 	doLast {
-		println "${project.version}" }
+		println "${project.version}"
+	}
 }
