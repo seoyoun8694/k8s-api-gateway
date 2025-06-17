@@ -1,4 +1,4 @@
-package com.welab.k8s_api_gateway.api;
+package com.welab.k8s_api_gateway.api.open;
 
 import com.welab.k8s_api_gateway.common.dto.ApiResponseDto;
 import lombok.RequiredArgsConstructor;
